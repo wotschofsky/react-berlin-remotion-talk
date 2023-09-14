@@ -1,0 +1,45 @@
+{
+  "name": "react-berlin-video",
+  "version": "0.0.0",
+  "sideEffects": [
+    "*.css"
+  ],
+  "scripts": {
+    "start": "remotion studio",
+    "build": "remotion render ReactBerlin out/video.mp4",
+    "upgrade": "remotion upgrade",
+    "test": "eslint src --ext ts,tsx,js,jsx && tsc"
+  },
+  "repository": {},
+  "license": "MIT",
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "webpack"
+      ]
+    }
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.39",
+    "@remotion/cli": "4.0.39",
+    "@remotion/zod-types": "4.0.39",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "remotion": "4.0.39",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "@remotion/cli": "4.0.14",
+    "@remotion/eslint-config": "4.0.39",
+    "@remotion/tailwind": "4.0.39",
+    "@types/react": "^18.2.20",
+    "@types/web": "^0.0.114",
+    "eslint": "^8.47.0",
+    "prettier": "^3.0.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "remotion": "4.0.14",
+    "typescript": "^5.1.6"
+  },
+  "packageManager": "yarn@1.22.19"
+}
