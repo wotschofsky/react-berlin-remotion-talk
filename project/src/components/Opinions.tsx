@@ -1,5 +1,11 @@
-import { type FC, useCallback, useEffect, useState } from 'react';
-import { continueRender, delayRender } from 'remotion';
+import { type FC, Fragment, useCallback, useEffect, useState } from 'react';
+import {
+  Audio,
+  continueRender,
+  delayRender,
+  Sequence,
+  staticFile,
+} from 'remotion';
 import { mock } from 'inatic/bundlers';
 
 import fetchTweets, { Tweet } from '../fetchTweets';
@@ -29,8 +35,16 @@ const Opinions: FC = () => {
   return (
     <div className="flex flex-col w-full">
       <div className="flex flex-col align-middle justify-center gap-8 h-full">
-        {data.map((tweet, index) => (
-          <OpinionItem key={tweet.id} tweet={tweet} startFrame={index * 60} />
+        {data.map((tweet, index, allTweets) => (
+          <Fragment key={tweet.id}>
+            <OpinionItem tweet={tweet} startFrame={index * 60} />
+
+            {index === allTweets.length - 1 && (
+              <Sequence from={index * 60}>
+                <Audio src={staticFile('wow.mp3')} />
+              </Sequence>
+            )}
+          </Fragment>
         ))}
       </div>
     </div>

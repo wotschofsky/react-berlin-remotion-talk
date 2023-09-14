@@ -1,4 +1,4 @@
-import { AbsoluteFill, Series } from 'remotion';
+import { AbsoluteFill, Audio, Series, staticFile } from 'remotion';
 import { loadFont } from '@remotion/google-fonts/Inter';
 import type { FC } from 'react';
 
@@ -11,6 +11,8 @@ const { fontFamily: interFont } = loadFont();
 
 const Composition: FC = () => (
   <AbsoluteFill className="bg-slate-900" style={{ fontFamily: interFont }}>
+    <Audio src={staticFile('background.mp3')} volume={0.2} />
+
     <Series>
       <Series.Sequence durationInFrames={50}>
         <Intro />
