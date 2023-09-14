@@ -11,6 +11,9 @@ dependencies:
   '@remotion/cli':
     specifier: 4.0.39
     version: 4.0.39(react-dom@18.2.0)(react@18.2.0)
+  '@remotion/google-fonts':
+    specifier: 4.0.39
+    version: 4.0.39(react-dom@18.2.0)(react@18.2.0)
   '@remotion/zod-types':
     specifier: 4.0.39
     version: 4.0.39(react-dom@18.2.0)(react@18.2.0)(zod@3.22.2)
@@ -839,6 +842,15 @@ packages:
       - supports-color
       - typescript
     dev: true
+
+  /@remotion/google-fonts@4.0.39(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-u+1c20x26+NNYGU7q+/FfEUCo67zFai/HTsHMb8OcFLmsnz9LROYO5SS3ZvGm8h51ivIDyUBXjrP4liRSWZBCg==}
+    dependencies:
+      remotion: 4.0.39(react-dom@18.2.0)(react@18.2.0)
+    transitivePeerDependencies:
+      - react
+      - react-dom
+    dev: false
 
   /@remotion/media-utils@4.0.39(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-hSl3EDawT1soiv8fWj3mUQWsALHoWwpQIm8dtiWPnsuUNHKvMKWk1+z19TTQD8N251yRqCMm4lEIX9MP4yX4Bg==}

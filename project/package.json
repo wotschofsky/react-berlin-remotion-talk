@@ -22,6 +22,7 @@
   "dependencies": {
     "@remotion/bundler": "4.0.39",
     "@remotion/cli": "4.0.39",
+    "@remotion/google-fonts": "4.0.39",
     "@remotion/zod-types": "4.0.39",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
