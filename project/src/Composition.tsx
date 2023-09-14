@@ -4,6 +4,7 @@ import type { FC } from 'react';
 
 import Bridge from './components/Bridge';
 import Intro from './components/Intro';
+import Opinions from './components/Opinions';
 
 const { fontFamily: interFont } = loadFont();
 
@@ -15,6 +16,9 @@ const Composition: FC = () => (
       </Series.Sequence>
       <Series.Sequence durationInFrames={40}>
         <Bridge />
+      </Series.Sequence>
+      <Series.Sequence durationInFrames={200}>
+        <Opinions />
       </Series.Sequence>
     </Series>
   </AbsoluteFill>

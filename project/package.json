@@ -8,7 +8,8 @@
     "start": "remotion studio",
     "build": "remotion render ReactBerlin out/video.mp4",
     "upgrade": "remotion upgrade",
-    "test": "eslint src --ext ts,tsx,js,jsx && tsc"
+    "test": "eslint src --ext ts,tsx,js,jsx && tsc",
+    "inatic": "inatic"
   },
   "repository": {},
   "license": "MIT",
@@ -36,6 +37,7 @@
     "@types/react": "^18.2.20",
     "@types/web": "^0.0.114",
     "eslint": "^8.47.0",
+    "inatic": "^0.13.1",
     "prettier": "^3.0.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
