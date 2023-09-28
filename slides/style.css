@@ -1,0 +1,8 @@
+.grid-cols-2 {
+  grid-template-columns: minmax(0,2fr) minmax(0,1fr) !important;
+  gap: 1rem;
+}
+
+.col-right img {
+  margin-top: 8rem;
+}
